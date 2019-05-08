@@ -1,0 +1,10 @@
+.tile {
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+}
+
+#board {
+  display: flex;
+  flex-flow: row wrap;
+}
