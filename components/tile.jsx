@@ -9,7 +9,7 @@ class Tile extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    this.props.updateGame
+    this.props.updateGame(this.props.tile, (!!(e.altKey)));
   }
   
   render() {
@@ -23,13 +23,13 @@ class Tile extends React.Component {
     } else if (flagged) {
       innerText = "\u2691";
     } else if (explored && numAdjBombs > 1) {
-      innerText = String(numAdjBonbs);
+      innerText = String(numAdjBombs);
     } else {
-      innerText = "T";
+      innerText = '';
     }
 
     return (
-      <div onClick={handleClick} className={`tile`}>{innerText}</div>
+      <div onClick={this.handleClick} className={`tile`}>{innerText}</div>
     );
   }
 }
