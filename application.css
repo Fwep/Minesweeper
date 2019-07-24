@@ -1,10 +1,14 @@
 .tile {
-  background-color: blue;
+  background-color: rgb(72.7%, 71.7%, 82.3%);
   height: 20px;
   width: 20px;
+  border-style: outset;
+  border-radius: .4ex;
 }
 
 #board {
+  padding-left: 50rem;
+  padding-right: 50rem;
   display: flex;
   flex-flow: row wrap;
 }
